@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Hasnain Business</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #f0f4f8;
+      color: #333;
+    }
+
+    header {
+      background: linear-gradient(135deg, #0077ff, #00c2ff);
+      padding: 40px 20px;
+      text-align: center;
+      color: white;
+      animation: slideIn 1s ease-in-out;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 1.1rem;
+    }
+
+    nav {
+      background: #222;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      padding: 15px 0;
+      animation: fadeIn 1.5s;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      color: #00c2ff;
+      transform: scale(1.1);
+    }
+
+    section {
+      padding: 50px 20px;
+      max-width: 900px;
+      margin: auto;
+      animation: fadeUp 1s ease-in;
+    }
+
+    section h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+      color: #0077ff;
+    }
+
+    section p {
+      font-size: 1.1rem;
+      line-height: 1.6;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 20px;
+      background-color: #0077ff;
+      color: white;
+      padding: 12px 25px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+
+    .btn:hover {
+      background-color: #005dc1;
+    }
+
+    footer {
+      background: #222;
+      color: white;
+      text-align: center;
+      padding: 25px;
+      margin-top: 50px;
+      font-size: 14px;
+      animation: fadeIn 1.5s;
+    }
+
+    /* Animations */
+    @keyframes slideIn {
+      0% {
+        transform: translateY(-100%);
+        opacity: 0;
+      }
+      100% {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+
+    @keyframes fadeIn {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+
+    @keyframes fadeUp {
+      0% {
+        transform: translateY(50px);
+        opacity: 0;
+      }
+      100% {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2rem;
+      }
+
+      nav {
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      section {
+        padding: 30px 15px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Hasnain Business</h1>
+    <p>Powering Dreams with Technology 🚀</p>
+  </header>
+
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="home">
+    <h2>Welcome to Hasnain Business</h2>
+    <p>We are a digital-first business with a mission to empower young entrepreneurs. From social media to smart apps, we are building tools that shape the future. Join our journey and be a part of innovation!</p>
+    <a href="#contact" class="btn">Contact Us</a>
+  </section>
+
+  <section id="about">
+    <h2>About Us</h2>
+    <p>Founded by Md Hasnain Reza, a 13-year-old entrepreneur from India, our company is all about creativity, vision, and big dreams. Our flagship idea 'Timebook' is a next-generation social media platform, built to connect the world in smarter ways.</p>
+  </section>
+
+  <section id="services">
+    <h2>Our Services</h2>
+    <p>🔹 Social Media App Development<br/>
+       🔹 Business Strategy & Branding<br/>
+       🔹 Web Design and UI/UX<br/>
+       🔹 Youth Entrepreneurship Training</p>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p>Email: <strong>contact@hasnainbusiness.com</strong></p>
+    <p>Phone: +91-9876543210</p>
+    <p>Location: Patna, Bihar, India</p>
+  </section>
+
+  <footer>
+    &copy; 2025 Hasnain Business. Made with 💙 by Md Hasnain Reza.
+  </footer>
+
+</body>
+</html>
